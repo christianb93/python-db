@@ -5,7 +5,7 @@ docker run -d --name some-mysql \
            -e MYSQL_ROOT_PASSWORD=my-secret-root-pw \
            -e MYSQL_USER=chr \
            -e MYSQL_PASSWORD=my-secret-pw \
-            mysql 
+            mysql
 
 # Give the database some time to come up
 mysqladmin --user=root --password=my-secret-root-pw \
@@ -18,9 +18,9 @@ do
   mysqladmin --user=root --password=my-secret-root-pw \
              --host='127.0.0.1'  \
              --silent status
-done 
+done
 
-# Create table books and grant rights to user chr
+# Create database books and grant rights to user chr
 mysqladmin --user=root \
            --password=my-secret-root-pw \
             --host='127.0.0.1'  create books
