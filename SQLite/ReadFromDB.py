@@ -17,6 +17,6 @@ cursor.execute(statement)
 rows = cursor.fetchall()
 
 # Iterate through result set
-for row in cursor:
+for row in rows:
     print ("Author: " + row[0])
     print ("Title:  " + row[1])
